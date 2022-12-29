@@ -1,0 +1,331 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+body img, body svg{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'Moniqa';
+    src: url(../fonts/Moniqa-MediumItalicDisplay.woff);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Moniqa';
+    src: url(../fonts/Moniqa-SemBdCondDisplay.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Moniqa';
+    src: url(../fonts/Moniqa-ThinCondItaDisplay.woff);
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-LightItalic.woff);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Main screen start */
+.main-screen{
+    height: calc(100vh - 40px);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-screen>.lab-name{
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/mushroom_stroke_lap_top.svg);
+    background-position: center center;
+    background-size: auto 40%;
+    background-repeat: no-repeat;
+}
+
+.main-screen>.lab-name .author-name, .main-screen>.lab-name .bio, .main-screen>.lab-name .research{
+    margin-left: auto;
+}
+
+.main-screen>.lab-name .author-name, .main-screen>.lab-name .bio{
+    margin-right: 30px;
+}
+
+.main-screen>.lab-name>.images-container{
+    max-width: 310px;
+    min-width: 280px;
+    margin: 0 auto;
+}
+
+.main-screen>.lab-name>.images-container>img{
+    display: block;
+}
+
+.main-screen p{
+    color: rgba(244, 108, 158, 1);
+
+}
+
+.main-screen>p{
+    padding: 0 20px;
+}
+
+.main-screen>.left-desc{
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+.main-screen>.right-desc{
+    text-align: right;
+    font-family: 'Raleway';
+    font-style: italic;
+}
+
+/* Main screen end */
+
+/* Quote screen start */
+.quote-screen{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.quote-screen>.back-images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.quote-screen>.back-images>svg{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+
+.quote-screen>.quote-block{
+    position: relative;
+    z-index: 3;
+    background-color: white;
+    padding: 50px 30px;
+    border-radius: 50px;
+}
+
+.quote-screen>.quote-block>blockquote{
+    margin: 0;
+    max-width: 300px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.quote-screen>.back-images .pink-hren, .quote-screen>.back-images .uterus-blue, .quote-screen>.back-images .green-mash{
+    display: none;
+}
+
+.quote-screen>.back-images .pink-mash{
+    max-width: 87%;
+    right: -40px;
+    bottom: 0;
+}
+
+.quote-screen>.back-images .uterus-orange{
+    max-width: 75%;
+    left: -10%;
+    bottom: 20%;
+}
+
+.quote-screen>.back-images .blue-mash{
+    max-width: 200%;
+    height: auto;
+    right: -100%;
+    top: 30px;
+}
+/* Quote screen end */
+
+/* Objection screen start */
+
+.objection-screen{
+    font-family: 'Moniqa';
+    text-align: center;
+    font-size: 46px;
+}
+
+.objection-screen>p{
+    margin: 30px 0;
+}
+
+.objection-screen>.booring{
+    color: white;
+    padding: 12px 24px;
+    background-color: #F28220;
+}
+
+.objection-screen>.no-text{
+    color: white;
+    padding: 12px 24px;
+    background-color: #2E2EED;
+}
+/* Objection screen end */
+
+/* Events screen start */
+.events-screen{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Moniqa';
+    font-style: italic;
+}
+
+.events-screen>h2{
+    color: #F28220;
+    font-size: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+.events-screen>h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.events-screen>.events-list{
+    list-style: none;
+    padding-left: 0;
+    background-image: url(../images/col_matky.svg);
+    background-size: auto 50%;
+    background-position: center center;
+}
+
+.events-screen>.events-list>li{
+    margin: 0 auto;
+    margin-bottom: 32px;
+    max-width: 240px;
+}
+
+.events-screen>.wrost-year{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 32px;
+}
+
+.events-screen>.wrost-year>li{
+    color: rgba(46, 46, 237, 1);
+    animation: garland_blue 1s linear infinite;
+    position: relative;
+    top: 0;
+}
+
+.events-screen>.wrost-year>li:nth-child(odd){
+    color: #F28220;
+    animation: garland_orange 1s linear infinite;
+}
+
+@keyframes garland_blue{
+    0%{
+        color: rgba(46, 46, 237, 1);
+    }
+    50%{
+        color: #F28220;
+        top: 6px;
+    }
+    100%{
+        color: rgba(46, 46, 237, 1);
+    }
+}
+
+@keyframes garland_orange{
+    0%{
+        color: #F28220;
+    }
+    50%{
+        color: rgba(46, 46, 237, 1);
+        top: -6px;
+    }
+    100%{
+        color: #F28220;
+    }
+}
+/* Events screen end */
+
+/* Coming soon start */
+.coming-soon-screen{
+    margin-top: 80px;
+    min-height: 60vh;
+    position: relative;
+}
+
+.coming-soon-screen>.coming-soon>h2{
+    margin-right: 20px;
+    color: rgba(5, 166, 62, 1);
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 40px;
+    font-family: 'Moniqa';
+    font-style: italic;
+    font-weight: 200;
+}
+
+.coming-soon-screen>.coming-soon>h3{
+    margin-right: 20px;
+    color: white;
+    text-align: right;
+    margin-top: 0;
+    font-size: 38px;
+    font-family: 'Moniqa';
+    font-style: italic;
+    font-weight: 200;
+}
+
+.coming-soon-screen>.left-images>.left-bubble{
+    width: 130%;
+    max-width: 130%;
+    left: -40%;
+}
+
+.coming-soon-screen>.left-images>.left-mash{
+    max-width: 72%;
+    left: -30%;
+    height: auto;
+}
+
+.coming-soon-screen>.right-images>.right-bubble{
+    display: none;
+}
+
+.coming-soon-screen>.right-images>.right-mash{
+    max-width: 48%;
+    bottom: 0;
+    height: auto;
+}
+
+.coming-soon-screen>.left-images, .coming-soon-screen>.right-images{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+}
+
+.coming-soon-screen>.left-images>svg, .coming-soon-screen>.right-images>svg{
+    position: absolute;
+}
+/* Coming soon end */
